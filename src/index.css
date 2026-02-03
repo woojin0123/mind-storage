@@ -1,0 +1,293 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #151531 0%, #000 100%);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFFEF5;
+  -webkit-text-stroke-width: 0.89px;
+  -webkit-text-stroke-color: rgba(255, 241, 169, 0.15);
+  font-family: "Bookk Myungjo";
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p,
+img,
+h1,
+h2,
+h3,
+ul,
+li,
+i {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+main {
+  overflow: hidden;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "Bookk Myungjo";
+}
+
+main {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo a {
+  position: absolute;
+  top: 30px;
+  right: 4%;
+  left: auto;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo > img {
+  max-width: 60%;
+  height: auto;
+  padding-top: 60px;
+}
+
+.layout {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.box1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.box {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 4vh;
+  min-height: 80px;
+  border-radius: 16px;
+  border: 0.5px solid #fffbe4c4;
+  box-shadow: 0px 0px 5px #f7e06d;
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  resize: none;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.box2 {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  max-width: 100%;
+  height: 40vh;
+  min-height: 200px;
+  margin-top: 20px;
+  border-radius: 16px;
+  border: 0.5px solid rgba(255, 251, 228, 0.2);
+  box-shadow: 0px 0px 8px rgba(247, 224, 109, 0.3);
+  background: transparent;
+  color: #fff;
+  padding: 15px;
+  resize: none;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.box2:focus {
+  outline: none;
+  border: 1px solid rgba(255, 251, 228, 0.5);
+  box-shadow: 0px 0px 10px rgba(247, 224, 109, 0.6);
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+.box:focus {
+  outline: none;
+  border: 1px solid rgba(255, 251, 228, 0.5);
+  box-shadow: 0px 0px 10px rgba(247, 224, 109, 0.6);
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+::placeholder {
+  font-size: 0.8rem;
+}
+
+.box1_save {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn1,
+.btn2 {
+  width: 150px;
+  height: 35px;
+  font-size: 0.65rem;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+  margin: 0;
+  padding: 0;
+}
+
+.btn1 {
+  background: rgba(174, 255, 255, 0.34);
+  border: 0.5px solid #aeffff;
+  border-radius: 22px;
+  box-shadow: 0px 0px 6px #aeffff;
+  display: block;
+  margin: 0px auto;
+  margin-top: 70px;
+}
+
+.btn2 {
+  background: rgba(255, 103, 35, 0.34);
+  border: 0.5px solid #ff6723;
+  border-radius: 22px;
+  box-shadow: 0px 0px 6px #ff6723;
+}
+
+.btn1:hover {
+  background: rgba(174, 255, 255, 0.5);
+}
+
+.btn2:hover {
+  background: rgba(255, 103, 35, 0.5);
+}
+
+footer p {
+  text-align: center;
+  padding: 50px;
+  padding-top: 100px;
+  font-size: 0.6rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Glassmorphism Flatpickr Custom --- */
+
+.flatpickr-calendar {
+  /* 배경을 반투명하게 하고 블러 효과 추가 */
+  background: rgba(255, 255, 255, 0.05) !important; 
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  
+  /* 테두리를 아주 얇고 은은하게 */
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+  border-radius: 20px !important;
+  width: 300px !important;
+}
+
+/* 상단 연도/월 헤더 부분 투명화 */
+.flatpickr-months, .flatpickr-month {
+  background: transparent !important;
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+/* 요일 표시 부분 */
+span.flatpickr-weekday {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 300 !important;
+}
+
+/* 날짜 숫자 */
+.flatpickr-day {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border: none !important;
+  border-radius: 80px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* 마우스를 올렸을 때 (살짝 밝아지는 효과) */
+.flatpickr-day:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* 오늘 날짜 (금색 테두리) */
+.flatpickr-day.today {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 2px solid rgba(247, 224, 109, 0.5) !important;
+  color: #F7E06D !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+}
+
+/* 선택된 날짜 (금색 포인트와 그림자) */
+.flatpickr-day.selected, 
+.flatpickr-day.selected:hover {
+  background: #F7E06D !important;
+  color: #151531 !important; 
+  font-weight: bold !important;
+  box-shadow: 0 0 15px rgba(247, 224, 109, 0.6) !important;
+}
+
+/* 화살표 아이콘 컬러 */
+.flatpickr-prev-month, .flatpickr-next-month {
+  color: #F7E06D !important;
+  fill: #F7E06D !important;
+}
+
+/* 달력 내부 선 제거 */
+.flatpickr-innerContainer, .flatpickr-rContainer {
+  border: none !important;
+}
