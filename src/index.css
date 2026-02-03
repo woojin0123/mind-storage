@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  color: #FFFEF5;
+  color: #fffef5;
   -webkit-text-stroke-width: 0.89px;
   -webkit-text-stroke-color: rgba(255, 241, 169, 0.15);
   font-family: "Bookk Myungjo";
@@ -221,10 +221,10 @@ footer p {
 
 .flatpickr-calendar {
   /* 배경을 반투명하게 하고 블러 효과 추가 */
-  background: rgba(255, 255, 255, 0.05) !important; 
+  background: rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(15px) !important;
   -webkit-backdrop-filter: blur(15px) !important;
-  
+
   /* 테두리를 아주 얇고 은은하게 */
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
@@ -233,7 +233,8 @@ footer p {
 }
 
 /* 상단 연도/월 헤더 부분 투명화 */
-.flatpickr-months, .flatpickr-month {
+.flatpickr-months,
+.flatpickr-month {
   background: transparent !important;
   color: #fff !important;
   fill: #fff !important;
@@ -267,27 +268,29 @@ span.flatpickr-weekday {
   align-items: center !important;
   justify-content: center !important;
   border: 2px solid rgba(247, 224, 109, 0.5) !important;
-  color: #F7E06D !important;
+  color: #f7e06d !important;
   padding: 0 !important;
   line-height: 1 !important;
 }
 
 /* 선택된 날짜 (금색 포인트와 그림자) */
-.flatpickr-day.selected, 
+.flatpickr-day.selected,
 .flatpickr-day.selected:hover {
-  background: #F7E06D !important;
-  color: #151531 !important; 
+  background: #f7e06d !important;
+  color: #151531 !important;
   font-weight: bold !important;
   box-shadow: 0 0 15px rgba(247, 224, 109, 0.6) !important;
 }
 
 /* 화살표 아이콘 컬러 */
-.flatpickr-prev-month, .flatpickr-next-month {
-  color: #F7E06D !important;
-  fill: #F7E06D !important;
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  color: #f7e06d !important;
+  fill: #f7e06d !important;
 }
 
 /* 달력 내부 선 제거 */
-.flatpickr-innerContainer, .flatpickr-rContainer {
+.flatpickr-innerContainer,
+.flatpickr-rContainer {
   border: none !important;
 }

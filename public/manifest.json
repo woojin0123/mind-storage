@@ -1,0 +1,25 @@
+{
+  "short_name": "마음저장소",
+  "name": "마음저장소: 오늘의 기록",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#151531",
+  "background_color": "#151531"
+}
+{
+  "icons": [
+    {
+      "src": "icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable" 
+    }
+  ]
+}

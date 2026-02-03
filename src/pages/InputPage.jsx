@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Modal from "../components/Modal.jsx"; // 모달 경로 확인
+import Modal from "../components/Modal.jsx";
 
 const MainContainer = styled.main`
   max-width: 500px;
